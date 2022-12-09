@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa navegador da versão do HTML a ser renderizado -->
+<html lang="pt-pt">
+    <head>
+        <title>Estrutura Básica</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Borges">
+        <meta name="keywords" content="html5, tecnologia, css">
+        <style>
+            body{
+                background-color: aquamarine;
+                margin: auto;
+                padding: 50px;
+            }
+            h1{
+                background-color: blanchedalmond;
+                padding: 10px;
+                margin: auto;
+                text-align: center;
+            }
+            .dados{
+                font-weight: 50px;
+                color:gray;
+                text-transform: uppercase;
+            }
+            h2{
+                background-color: blanchedalmond;
+                padding: 10px;
+                margin: auto;
+                text-align: center;
+                font-style: italic;
+            }
+            h3{
+                background-color: blanchedalmond;
+                padding: 10px;
+                margin: auto;
+                text-align: center;
+                font-style: italic;
+                border-bottom: 5px dashed;
+                border-color:violet;
+            }
+            .forma{
+                font-size: large;
+                font-variant: small-caps;
+                font-style: italic;
+                text-decoration:underline;
+            }
+            #FED{
+                color: blueviolet;
+            }
+            #FED:hover{
+                color: violet;
+            }
+            #MOS{
+                color: blue;
+            }
+            #MUL:hover{
+                background-color: red;
+                color: black;
+            }
+            .ho{
+                color:royalblue;
+                background-color: rgba(156, 98, 87, 0.473);
+                border: 10px;
+                border-style: groove;
+                border-color: thistle;
+                font-size: 25px;
+               
+            }
+            h4{
+                align-self: center;
+                text-align: center;
+                margin-right: 95%;
+                padding: auto;
+                background-color: blanchedalmond;
+                border: 5px;
+                border-style: dotted;
+            }
+            #Desporto{
+                font-size: 30px;
+                text-align: center;
+                color: orange;
+            }
+            .destaque{
+                font-weight: bold;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Dados pessoais</h1>
+        <p class="dados"><b>Nome:</b> Miguel Ângelo Coimbra Borges</p>
+        <p class="dados"><b>Idade:</b> 29 anos</p>
+        <p class="dados"><b>Contacto:</b> miguelborges.mb@gmail.com</p>
+
+        <h2>Experiência Profissional</h2>
+        <ol>
+            <li><b>Profissão:</b> Vigilante <br>
+            <p class="destaque"> Periodo: 2019-2022 </p></li>
+            <li><b>Profissão:</b> Empregado Mesa/Bar <br>
+            <p class="destaque"> Periodo: 2021-Presente</p></li>
+            <li><b>Profissão:</b> Aprendiz <br>
+            <p class="destaque">Periodo: Eterno</p></li>
+
+        </ol>
+
+        <h3>Formação</h3>
+        <p class="forma"><b>Curso:</b> <a id="MUL" href="https://www.oficina.pt/oferta-educativa-cursos-oficina-escola-profissional/cursos-profissionais/tecnico-de-multimedia" target="_blank">Técnico de Multimédia - IV</a> </p>
+        <p class="forma"><b>Curso:</b> <a id="FED" href="https://www.simplilearn.com/front-end-developer-free-course-skillup" target="_blank">Introdução de FRONT END Devolopment</a></p>
+        <p class="forma"><b>Curso:</b> <a id="MOS" href="https://learn.microsoft.com/en-us/certifications/microsoft-office-specialist-associate-2019/" target="_blank">Certificação Microsofg Office Associate</a> </p>
+
+        <h4>Hobbies</h4>
+        <ol class="ho">
+            <li>Ler</li>
+            <li id="Desporto">Desporto</li>
+            <li>Aprender</li>
+            <li>Ouvir</li>
+        </ol>
+
+    </body>
+</html>
