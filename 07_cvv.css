@@ -1,0 +1,71 @@
+body{
+    background-color: aquamarine;
+    margin: auto;
+    padding: 50px;
+}
+h1{
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+.dados{
+    font-weight: 50px;
+    color:gray;
+    text-transform: uppercase;
+}
+h2{
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 5px dashed;
+    border-color:violet;
+}
+.forma{
+    font-size: large;
+    font-variant: small-caps;
+    font-style: italic;
+    text-decoration:underline;
+}
+#FED{
+    color: blueviolet;
+}
+#FED:hover{
+    color: violet;
+}
+#MOS{
+    color: blue;
+}
+#MUL:hover{
+    background-color: red;
+    color: black;
+}
+.ho{
+    color:royalblue;
+    background-color: rgba(156, 98, 87, 0.473);
+    border: 10px;
+    border-style: groove;
+    border-color: thistle;
+    font-size: 25px;
+   
+}
+h4{
+    align-self: center;
+    text-align: center;
+    margin-right: 95%;
+    padding: auto;
+    background-color: blanchedalmond;
+    border: 5px;
+    border-style: dotted;
+}
+#Desporto{
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+}
+.destaque{
+    font-weight: bold;
+    font-size: 18px;
+}
