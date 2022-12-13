@@ -20,6 +20,12 @@ body{
     font-size:35px;
     text-shadow: 4px 4px 1px #333;
 }
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
 .hero nav ul{
     text-align: right;
     margin: 20px 50px 0 0;
@@ -50,10 +56,31 @@ main{
 }
 .content-section{
     background-color: white;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto;
     
 }
+
+.card{
+    width: 33%;
+    float:left;
+    box-sizing: border-box;
+}
+.card-1, .card-2{
+    margin-right: 4px;
+}
+.card img{
+    width: 100%;
+    display:block;
+}
+.card p{
+    background-color: rgb(105, 105, 105);
+    color: white;
+    margin:0;
+    padding: 5px;
+}
+
 .title{
     background-color: #eee;
     border-bottom: solid 3px #ccc;
@@ -74,8 +101,4 @@ main{
     padding-right: 10px;
     padding-top: 5px;
 
-}
-.card{
-    display: inline-block;
-    
 }
