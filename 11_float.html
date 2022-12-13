@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa navegador da versão do HTML a ser renderizado -->
+<html lang="pt-pt">
+    <head>
+        <title>float</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Borges">
+        <meta name="keywords" content="html5, tecnologia, css">
+
+        <style>
+            #container{
+                width:80%;
+                padding: 15px;
+                background: #ccc;
+                overflow: auto;
+            }
+            #container div{
+                width: 150px;
+                height:50px;
+                border: 2px solid red;
+                margin: 5px;
+                text-align: center;
+                
+            }
+            #div1{
+                
+            }
+            #div2{
+                float: right;
+            }
+            #div3{
+                clear:both;
+                float:right;
+            }
+    header{
+        background:#ccc;
+        height: 50px;
+    }
+    nav{
+        width: 25%;
+        height: 100px;
+        background: orange;
+        float:left;
+        border: 2px dotted red;
+        margin:2px;
+    }
+    main{
+        width: 70%;
+        height: 100px;
+        background:yellow;
+        float:right;
+    }
+    footer{
+        height: 50px;
+        background: blue;
+        clear:both;
+    }
+    
+        </style>
+    </head>
+    <body>
+        <h1>FLOAT</h1>
+        <div id="container">
+            <div id="div1">DIV 1</div>
+            <div id="div2">DIV 2</div>
+            <div id="div3">DIV 3</div>
+        </div>
+        <hr>
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+
+    </body>
+</html>
