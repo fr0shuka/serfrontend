@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa navegador da versão do HTML a ser renderizado -->
+<html lang="pt-pt">
+    <head>
+        <title>OVERFLOW</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Borges">
+        <meta name="keywords" content="html5, tecnologia, css">
+        <style>
+            div{
+                padding: 2px;
+                margin: 50px 2%;
+                width: 20%;
+                border: 1px solid black;
+                display: block;
+                height: 100px;
+                font-family: sans-serif;
+                font-size: 15px;
+                float: left;
+            }
+            .div1{
+                overflow: visible;
+            }
+            .div2{
+                overflow: hidden;
+            }
+            .div3{
+                overflow: scroll;
+            }.div4{
+                overflow: auto;
+            }
+            /* OVERFLOW para tratar do material numa secção */
+        </style>
+    </head>
+    <body>
+        <h1>OVERFLOW</h1>
+        <div class="div1">
+            <p>The CSS overflow property controls what happens to content that is too big to fit into an area. This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content.</p>
+        </div>
+
+        <div class="div2">
+            <p>How do I use overflow in CSS?
+                Use overflow-x : scroll and overflow-y : hidden , or overflow: scroll hidden instead. Use overflow-x : hidden and overflow-y : scroll , or overflow: hidden scroll instead. Use overflow: clip instead.</p>
+        </div>
+
+        <div class="div3">
+            <p>To change this, set the min-width or min-height property.” This means that a flex item with a long word won't shrink below its minimum content size. To fix this, we can either use an overflow value other than visible , or we can set min-width: 0 on the flex item. This means that a flex item with a long word won't shrink below its minimum content size. To fix this, we can either use an overflow value other than visible , or we can set min-width: 0 on the flex item.</p>
+        </div>
+
+        <div class="div4">
+            <p>What is overflow style?
+                Definition and Usage. The overflow-style property specifies the preferred scrolling method for elements that overflow. Default value: autoDefinition and Usage. The overflow-style property specifies the preferred scrolling method for elements that overflow. Default value: auto</p>
+        </div>
+    </body>
+</html>

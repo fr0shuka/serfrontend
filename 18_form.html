@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa navegador da versão do HTML a ser renderizado -->
+<html lang="pt-pt">
+    <head>
+        <title>FORMS</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Borges">
+        <meta name="keywords" content="html5, tecnologia, css">
+
+        <style>
+            body{
+                width: 90%;
+                margin: auto;
+                
+            }
+            #date{
+                background: whitesmoke;
+            }
+            #sub{
+                letter-spacing: 5px;
+                position: relative;
+                display: block;
+                width: 500px;
+                margin: auto;
+                background-color: rgb(52, 53, 53);
+                border: 3px solid salmon;
+                color: salmon;
+            }
+            #sub:hover{
+                background-color: salmon;
+                color:rgb(52, 53, 53);
+                
+            }
+            #range{
+                width: 250px;
+           
+            }
+           
+        </style>
+      
+
+    </head>
+    <body>
+        <h1>Formulário Dados pessoais</h1>
+        <p>Adicionando tipos de inputs</p>
+
+        <form action="#" method="GET" class="formlogin">
+         <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="">Email</label>
+            <input type="email" name="" id="" required placeholder="digite email válido"> <!--o required é um atributo para não deixar enviar o formulário sem preenchimento do Input pedido-->
+<br>
+            <label for="">Número de filhos</label>
+            <input type="number" min="0" max="50">
+<br>
+            <label for="">Data de nascimento</label>
+            <input type="date" id="date">
+            <p>Sexo:</p>
+            <label> <!--se tivesse o for="" o mesmo não funcionaria-->
+                <input type="radio" name="sexo" value="M">
+                Masculino
+            </label>
+            <input type="radio" name="sexo" value="F">
+            <label for="">Feminino</label>
+<br><br>
+            <label for="">Cidade em que vive</label>
+            <select name="estado" id="">
+                <option value="PT">Porto</option>
+                <option value="LIS">Lisboa</option>
+                <option value="AV">Aveiro</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label><input type="checkbox" name="html" value="html">HTML</label>
+            <label><input type="checkbox" name="html" value="html">CSS</label>
+            <label><input type="checkbox" name="html" value="html">Java</label>
+            <label><input type="checkbox" name="html" value="html">Type</label>
+            <label><input type="checkbox" name="html" value="html">Ruby</label>
+        </fieldset>
+
+        <fieldset>
+            
+            <legend>Mensagem</legend>
+            <textarea style="resize: none" name="msg" cols="100" rows="10" maxlength="10"></textarea> <!--o style resize é para não haver possibilidade de editar o tamanho da caixa-->
+            <!--o maxlength é quantidade de letras/numeros que dá para escrever-->
+            
+            <textarea style="resize: none" name="contrato" cols="100" rows="10" readonly>Aqui é o contrato para ser aceite</textarea><br> <!--o readonly é para nao apagar, o disable dá igual só que fica com fundo diferente.-->
+            <label><input type="checkbox">Li e Aceito</label>
+
+            <input id="range" type="range">
+            <input id="time" type="time">
+            <input id="color" type="color">
+
+            <select name="" id="" multiple>
+                <option value="">Opção 1</option>
+                <option value="">Opção 2</option>
+                <option value="">Opção 3</option>
+                <option value="">Opção 4</option>
+
+            </select>
+
+        </fieldset>
+           <br>
+            <input id="sub" type="submit" value="Enviar">
+            <input type="button" value="BUTTON"> <!--type button serve para ser configurado por Javascript || Sem funcionalidade nenhuma sem config do mesmo-->
+            <input type="reset" value="Clean">
+         
+        </form>
+    </body>
+</html>
