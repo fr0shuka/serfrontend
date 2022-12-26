@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa navegador da versão do HTML a ser renderizado -->
+<html lang="pt-pt">
+    <head>
+        <title>Estrutura Básica</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Borges">
+        <meta name="keywords" content="html5, tecnologia, css">
+
+        <style>
+            div{
+                border: 3px solid rgb(240, 7, 7);
+                padding: 25px;
+                position: relative;
+            }
+            div::before{
+                content: "TEXTO ANTES ";
+            }
+            div::after{
+                content: "";
+                background: red;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div>Texto principal da DIV</div>
+
+        <article class="destaque">
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+        </article>
+        <br><br>
+
+<ul>
+    <li><a href="#">link falso</a></li>
+    <li><a href="#">link falso</a></li>
+    <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+    <li><a href="http://serfrontend.com/qq.pdf" target="_blank">link externo</a></li>
+    <li><a href=".//07_CVV.html" title="veja cvv">link interno</a></li>
+</ul>
+
+
+
+    </body>
+</html>

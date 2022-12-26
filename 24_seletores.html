@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa navegador da versão do HTML a ser renderizado -->
+<html lang="pt-pt">
+    <head>
+        <title>Estrutura Básica</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Miguel Borges">
+        <meta name="keywords" content="html5, tecnologia, css">
+
+        <style>
+            article:nth-child(1) a{
+                color: red;
+            }
+            article:nth-child(3) > p{
+                color:red;
+            }
+            article:nth-child(5) h3 + p{
+                color:red;
+            }
+            article:nth-child(7) h3 ~ p{
+                color:orange;
+            }
+            article:not(.destaque){
+                color: orange;
+            }
+            .destaque{
+                background: yellow;
+            }
+            a[href="#"]{
+                opacity: .2;
+            }
+            a[href^="http"]{
+                color: red;
+            }
+            a[title]{
+                color: green;
+            }
+            a[href$=".pdf"]{
+                text-decoration: none;
+            }
+            
+            </style>
+    </head>
+    <body>
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+        </article>
+        <hr>
+
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <article class="destaque">
+            <h3>
+                Titulo
+            </h3>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+            <p>paragrafo <a href="#">Apena um link <b>negrito</b></a></p>
+        </article>
+        <br><br>
+
+<ul>
+    <li><a href="#">link falso</a></li>
+    <li><a href="#">link falso</a></li>
+    <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+    <li><a href="http://serfrontend.com/qq.pdf" target="_blank">link externo</a></li>
+    <li><a href=".//07_CVV.html" title="veja cvv">link interno</a></li>
+</ul>
+
+
+
+    </body>
+</html>
